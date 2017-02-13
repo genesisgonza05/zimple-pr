@@ -1,0 +1,11 @@
+= form_for(@journalist) do |f|
+  = render 'shared/errors', object: @journalist
+  #action.hidden #{params[:action]}
+  #id.hidden #{@journalist.id}
+  .form-group
+    = f.label :name
+    = f.text_field :name, class: 'form-control', required: true
+  .form-group
+    = f.label :media
+    = f.text_field :media, class: 'form-control', required: true
+  = f.submit "#{button_name(params[:action])}", class: "btn btn-primary"

@@ -1,0 +1,28 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+.container {
+  margin-top: 30px;
+}
+
+table#journalists td,
+table#journalists th {
+  padding: 12px 20px;
+}
+
+table#journalists {
+  margin-top: 50px;
+  border: 1px solid #ddd;
+}
+
+#new-journalist-button {
+  margin-top: 21px;
+  margin-bottom: 47px;
+  float: right;
+}
+
+.float-right{
+  float: right;
+}

@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>ZimplePr</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>ZimplePr</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id="main-container" class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <% flash.each do |key, value| %>
+            <%= content_tag :div, value, class: "flash alert alert-#{key}" %>
+          <% end %>
 
-<%= yield %>
-
-</body>
+          <%= yield %>
+        </div>
+    </div>
+    </div>
+  </body>
 </html>

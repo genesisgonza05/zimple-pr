@@ -1,0 +1,21 @@
+= render 'header'
+
+table#journalists.table.table-striped.table-responsive
+  thead
+    tr
+      th Name
+      th Media
+      th
+      th
+  tbody
+    - if @journalists.blank?
+      tr
+        td colspan="4" No Journalists
+    - @journalists.each do |journalist|
+      tr
+        td=journalist.name
+        td=journalist.media
+        td= link_to "Update", edit_journalist_path(journalist), method: :get, remote: true, "data-toggle" => "modal", "data-target" => "#new-journalist"
+        td= link_to 'Destroy', { action: :destroy, id: journalist.id }, method: :delete, data: { confirm: 'Are you sure?' }
+
+= render 'new_modal'

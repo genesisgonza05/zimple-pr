@@ -1,0 +1,11 @@
+.col-md-12
+  h4.float-right
+    | Made by: 
+    = link_to "Genesis Gonzalez", "https://ve.linkedin.com/in/genesis-gonzalez-479814109", target: "_blank"
+
+hr.col-md-12
+
+.col-md-6
+  h1 Journalists
+.col-md-6
+  = link_to "Add Journalist", new_journalist_path, class: "btn btn-primary", remote: true, "data-toggle" => "modal", "data-target" => "#new-journalist", id: "new-journalist-button"
