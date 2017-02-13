@@ -1,10 +1,10 @@
 == README
 
-#It's a test made by Genesis to ZimplePR company.
+####It's a test made by [Genesis](https://ve.linkedin.com/in/genesis-gonzalez-479814109) to ZimplePR company.
 
 ---
 
-#About this:
+####About this:
 
 * Ruby 3.2.1
 
@@ -18,7 +18,7 @@
 
 ---
 
-#Instructions:
+####Instructions:
 
 "Create a page with a journalist table with your name and media name.
 
@@ -31,3 +31,4 @@ Upload the code in github and optionally 'deploya' the resulting application to 
 ---
 
 It's all ;)
+
