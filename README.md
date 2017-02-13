@@ -1,6 +1,6 @@
 == README
 
-#### It's a test made by [Genesis](https://ve.linkedin.com/in/genesis-gonzalez-479814109) to ZimplePR company.
+#### It's a test made by [**Genesis**](https://ve.linkedin.com/in/genesis-gonzalez-479814109) to ZimplePR company.
 
 ---
 
